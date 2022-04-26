@@ -24,7 +24,10 @@ darkMode.addEventListener('click', ()=>{
   })
   .add({
     targets: "#darkMode",
-    rotate: 320
+    rotate: 320,
+    complete: () => {
+      console.log('show the rest of the webpage')
+    }
   }, '-= 350')
   .add({
     targets: "section",
